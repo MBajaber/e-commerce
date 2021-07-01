@@ -25,7 +25,8 @@ function CartPage() {
         const stripe = await stripePromise;
         // Send To Backend
         
-        const checkoutSession = await axios.post('http://localhost:4000/payment', {
+        // const checkoutSession = await axios.post('http://localhost:4000/payment', {
+        const checkoutSession = await axios.post('https://e-commerce-shopping-m.herokuapp.com/payment', {
             products: products,
             email: email !== null ? email : displayName
         });
