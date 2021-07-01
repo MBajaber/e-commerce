@@ -1,0 +1,15 @@
+//  Products
+export const SEARCH_PRODUCTS = 'SEARCH_PRODUCTS';
+export const ADD_TO_CART = 'ADD_TO_CART';
+export const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
+export const CURRENT_PRODUCT = 'CURRENT_PRODUCT';
+export const CURRENT_PRODUCT_NULL = 'CURRENT_PRODUCT_NULL';
+export const GET_TOTAL = 'GET_TOTAL';
+export const INCREASE_QUANTITY = 'INCREASE_QUANTITY';
+export const DECREASE_QUANTITY = 'DECREASE_QUANTITY';
+
+//  User
+export const TOGGLE_NAVBAR = 'TOGGLE_NAVBAR';
+export const GET_USER = 'GET_USER';
+export const LOGOUT_USER = 'LOGOUT_USER';
+export const PAGE_INFO = 'PAGE_INFO';

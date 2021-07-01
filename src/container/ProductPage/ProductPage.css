@@ -1,0 +1,185 @@
+.single_item {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  height: 100%;
+  animation: showUp 0.3s ease-in-out;
+  margin: 60px 0;
+}
+
+@keyframes showUp {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.single_item:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px 0rgba (0, 0, 0, 0.04);
+}
+
+@media (min-width: 400px) {
+  .single_item {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 900px) {
+  .single_item {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.single_item .img_product {
+  text-align: center;
+  width: auto !important;
+  height: auto !important;
+  max-width: 320px;
+}
+
+@media (max-width: 630px) {
+  .single_item .img_product .js-image-zoom__zoomed-area,
+  .single_item .img_product .js-image-zoom__zoomed-image {
+    display: none !important;
+  }
+}
+
+.single_item .img_product img {
+  max-width: 100%;
+  cursor: default;
+}
+
+@media (min-width: 630px) {
+  .single_item .img_product img {
+    cursor: crosshair;
+  }
+}
+
+@media (min-width: 400px) {
+  .single_item .img_product img {
+    width: 80% !important;
+    height: auto !important;
+  }
+}
+
+.single_item .info {
+  max-width: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.single_item .info .rating_People {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.single_item .info .rating_People ul {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.single_item .info .rating_People ul li svg {
+  font-size: 1.2rem;
+  color: #fecaca;
+}
+
+.single_item .info .rating_People .ratting {
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+  color: #6b7280;
+}
+
+.single_item .info .title {
+  font-family: "Rubik", sans-serif;
+  color: #1f2937;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.single_item .info .description {
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.4rem;
+  overflow-wrap: anywhere;
+}
+
+.single_item .info .currency {
+  margin-top: 10px;
+  font-weight: 900;
+  color: #111827;
+}
+
+.single_item .info .prime {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.single_item .info .prime .image_prime {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.single_item .info .prime .image_prime img {
+  max-width: 100%;
+}
+
+.single_item .info .prime p {
+  color: #9ca3af;
+  font-size: 0.7rem;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.single_item .info .buttons_section {
+  margin-top: 10px;
+}
+
+.single_item .info .buttons_section .button_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 4px;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.single_item .info .buttons_section .button_item span {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.single_item .info .buttons_section .button_item svg {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.single_item .info .buttons_section .add_to_cart {
+  background-color: #fca5a5;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.single_item .info .buttons_section .remove_from_cart {
+  border: 1px solid #dc2626;
+  color: #dc2626;
+  background-color: transparent;
+}

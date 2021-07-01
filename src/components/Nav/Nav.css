@@ -1,0 +1,173 @@
+.nav {
+  background-color: #363c48;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  color: #fff;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.nav .sections {
+  height: 100%;
+  width: 100%;
+}
+
+.nav .sections .nav_section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .sections .nav_section .logo > img {
+  width: 40px;
+}
+
+.nav .sections .nav_section .search {
+  flex-grow: 1;
+  margin-left: 2%;
+  margin-right: 2%;
+  height: 35px;
+  display: none;
+}
+
+@media (min-width: 450px) {
+  .nav .sections .nav_section .search {
+    display: block;
+  }
+}
+
+.nav .sections .nav_section .search form,
+.nav .sections .search_sm form {
+  overflow: hidden;
+  height: 100%;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav .sections .nav_section .search form > input,
+.nav .sections .search_sm form > input {
+  width: 80%;
+  height: 100%;
+  padding: 0 10px;
+  color: #777;
+  border: 0;
+  font-size: 0.9rem;
+  transition: all 0.3s ease-in-out;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  max-width: 400px;
+}
+
+.nav .sections .nav_section .search form > input:focus,
+.nav .sections .search_sm form > input:focus {
+  outline: 0;
+}
+
+.nav .sections .nav_section .search form > button,
+.nav .sections .search_sm form > button {
+  width: 20%;
+  height: 100%;
+  background-color: #fdc21d;
+  color: #fff;
+  border: 0;
+  cursor: pointer;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  max-width: 80px;
+}
+
+.nav .sections .nav_section .search form > button svg,
+.nav .sections .search_sm form > button svg {
+  font-size: 1.2rem;
+}
+
+.nav .sections .nav_section .icon_cart {
+  display: flex;
+  align-items: center;
+}
+
+.nav .sections .nav_section .icon_cart .user_name {
+  font-size: 14px;
+  margin-right: 10px;
+  display: none;
+}
+
+@media (min-width: 450px) {
+  .nav .sections .nav_section .icon_cart .user_name {
+    display: block;
+  }
+}
+
+.nav .sections .nav_section .icon_cart .shopping_cart {
+  margin-right: 18px;
+  position: relative;
+  cursor: pointer;
+  color: #fff;
+}
+
+.nav .sections .nav_section .icon_cart .shopping_cart svg {
+  font-size: 1.5rem;
+}
+
+.nav .sections .nav_section .icon_cart .shopping_cart .counter {
+  position: absolute;
+  top: 8px;
+  left: 13px;
+  background-color: #dc2626;
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav .sections .nav_section .icon_cart .shopping_cart .counter span {
+  font-size: 10px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.nav .sections .nav_section .icon_cart .navbar_icon {
+  width: 50px;
+  height: 36px;
+  border: 1px solid #796868;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3px 5px;
+  border-radius: 4px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.nav .sections .nav_section .icon_cart .navbar_icon > svg {
+  user-select: none;
+  font-size: 1.8rem;
+}
+
+.nav .sections .search_sm {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 35px;
+  width: 100%;
+  margin-top: 8px;
+}
+@media (min-width: 450px) {
+  .nav .sections .search_sm {
+    display: none;
+  }
+}
+
+.nav .sections .search_sm form {
+  width: 100%;
+}

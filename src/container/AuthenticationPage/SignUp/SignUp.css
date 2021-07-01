@@ -1,0 +1,153 @@
+.sign_up {
+  margin: 60px auto;
+  padding: 30px;
+  background-color: #363c48;
+  width: 85%;
+  border-radius: 4px;
+  max-width: 550px;
+}
+
+.sign_up .title {
+  font-size: 1.6rem;
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.sign_up .error_msg_content {
+  transition: all 0.3s ease-in-out;
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  position: relative;
+  padding: 0.75rem 1.25rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+}
+
+.sign_up .facebook_google {
+  margin-top: 20px;
+}
+
+.sign_up .facebook_google .social_btn {
+  display: block;
+  margin-bottom: 10px;
+  width: 100%;
+  border-radius: 4px;
+  color: #fff;
+  font-weight: bold;
+  padding: 8px 12px;
+  border: 0;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.5;
+  transition: all 0.3s ease-in-out;
+}
+
+.sign_up .facebook_google .social_btn:hover {
+  filter: brightness(110%);
+}
+
+.sign_up .facebook_google .social_btn.face_btn {
+  background-color: #2099e2;
+}
+
+.sign_up .facebook_google .social_btn.google_btn {
+  background-color: rgb(234, 67, 53);
+}
+
+.sign_up .or_login_with {
+  margin: 20px 0;
+  text-align: center;
+  color: #f5f5f5;
+  position: relative;
+}
+
+.sign_up .or_login_with::before,
+.sign_up .or_login_with::after {
+  content: "";
+  width: 30%;
+  position: absolute;
+  top: 50%;
+  height: 1px;
+  background-color: #d1d5db;
+  display: none;
+}
+
+.sign_up .or_login_with::before {
+  left: 0;
+}
+
+.sign_up .or_login_with::after {
+  right: 0;
+}
+
+@media (min-width: 400px) {
+  .sign_up .or_login_with::before,
+  .sign_up .or_login_with::after {
+    display: block;
+  }
+}
+
+.sign_up .form {
+  margin: 20px 0;
+}
+
+.sign_up .form .form_group {
+  margin-bottom: 15px;
+}
+
+.sign_up .form .form_group .error {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: rgb(220, 53, 69);
+}
+
+.sign_up .form .form_group input {
+  display: block;
+  width: 100%;
+  height: calc(1.5em + 0.75rem + 2px);
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #d1d5db;
+  background-color: transparent;
+  border: 1px solid transparent;
+  /* border-bottom: 1px solid #d1d5db; */
+  outline: 0;
+}
+
+.sign_up .form .submit {
+  width: 100%;
+  height: 38px;
+  padding: 0.375rem 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #34d399;
+  color: #fff;
+  border: 0;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+}
+
+.sign_up .form .submit:hover {
+  filter: brightness(110%);
+}
+
+.sign_up .form .submit.disabled {
+  background-color: rgb(52 211 153 / 50%);
+  cursor: not-allowed;
+}
+
+.sign_up .link {
+  color: #fff;
+}
+
+.sign_up .link a {
+  color: #34d399;
+}

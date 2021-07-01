@@ -1,0 +1,138 @@
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 100;
+  transition: all 0.3s ease-in-out;
+  animation: scal 0.3s ease-in-out;
+  user-select: none;
+}
+
+@keyframes scal {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.sidebar .main_box {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  width: 85%;
+  height: 100%;
+  padding: 20px;
+  background-color: #fff;
+  transition: all 5s 0.3s ease-in-out;
+}
+
+.sidebar .main_box.open {
+  right: 0;
+}
+
+@keyframes moveit {
+  0% {
+    right: -100%;
+  }
+  100% {
+    right: 0%;
+  }
+}
+
+@media (min-width: 300px) {
+  .sidebar .main_box {
+    width: 250px;
+  }
+}
+
+.sidebar .main_box .close_btn {
+  width: 30px;
+  position: absolute;
+  left: -20px;
+  height: 30px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  color: #f12f1e;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+@media (min-width: 350px) {
+  .sidebar .main_box .close_btn {
+    left: -40px;
+  }
+}
+
+.sidebar .main_box .logo_box {
+  display: flex;
+}
+
+.sidebar .main_box .logo_box .logo {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.sidebar .main_box .logo_box .logo_text {
+  color: #249adf;
+}
+
+.sidebar .main_box .logo_box .logo_text span {
+  color: #f12f1e;
+}
+
+.sidebar .main_box .user_box {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar .main_box .user_box .img {
+  width: 35px;
+}
+
+.sidebar .main_box .user_box .img img {
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+.sidebar .main_box .user_box .user_name {
+  font-size: 1rem;
+}
+
+.sidebar .main_box .sign_in_sign_up {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar .main_box .sign_in_sign_up > a {
+  color: #249adf;
+  font-size: 1rem;
+}
+
+.sidebar .main_box .logout {
+  margin-top: 20px;
+}
+
+.sidebar .main_box .logout button {
+  background-color: transparent;
+  border: 0;
+  color: #f12f1e;
+  cursor: pointer;
+  font-size: 1rem;
+}

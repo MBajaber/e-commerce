@@ -1,0 +1,28 @@
+.banner {
+  margin: auto;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .banner {
+    width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .banner {
+    width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .banner {
+    width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .banner {
+    width: 1140px;
+  }
+}

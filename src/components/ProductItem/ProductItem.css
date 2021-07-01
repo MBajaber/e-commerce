@@ -1,0 +1,161 @@
+.product_item {
+  position: relative;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 30px 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  height: 100%;
+  animation: showUp 0.3s ease-in-out;
+}
+
+@keyframes showUp {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.product_item:hover {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px 0rgba (0, 0, 0, 0.04);
+}
+
+.product_item .category {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  font-size: 0.7rem;
+  color: #6b7280;
+  font-weight: 500;
+}
+
+.product_item .sections {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.product_item .sections .top_section {
+  cursor: pointer;
+}
+
+.product_item .sections .top_section .main_image {
+  width: 80px;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.product_item .sections .top_section .main_image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.product_item .sections .top_section .rating_People {
+  margin-top: 15px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.product_item .sections .top_section .rating_People ul {
+  display: flex;
+  align-items: center;
+  margin-right: 5px;
+}
+
+.product_item .sections .top_section .rating_People ul li svg {
+  font-size: 1.2rem;
+  color: #fecaca;
+}
+
+.product_item .sections .top_section .rating_People .ratting {
+  font-size: 0.8rem;
+  margin-bottom: 5px;
+  color: #6b7280;
+}
+
+.product_item .sections .top_section .title {
+  font-family: "Rubik", sans-serif;
+  color: #1f2937;
+  font-weight: bold;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+}
+
+.product_item .sections .top_section .description {
+  color: #374151;
+  font-size: 14px;
+  line-height: 1.4rem;
+  overflow-wrap: anywhere;
+}
+
+.product_item .sections .top_section .currency {
+  margin-top: 10px;
+  font-weight: 900;
+  color: #111827;
+}
+
+.product_item .sections .top_section .prime {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.product_item .sections .top_section .prime .image_prime {
+  width: 50px;
+  margin-right: 10px;
+}
+
+.product_item .sections .top_section .prime .image_prime img {
+  max-width: 100%;
+}
+
+.product_item .sections .top_section .prime p {
+  color: #9ca3af;
+  font-size: 0.7rem;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.product_item .bottom_section {
+  margin-top: 10px;
+}
+
+.product_item .bottom_section .button_item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  border-radius: 4px;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  cursor: pointer;
+}
+
+.product_item .bottom_section .button_item span {
+  font-size: 0.9rem;
+  text-transform: capitalize;
+}
+
+.product_item .bottom_section .button_item svg {
+  margin-left: 10px;
+  font-size: 1.2rem;
+}
+
+.product_item .bottom_section .add_to_cart {
+  background-color: #fca5a5;
+  color: #fff;
+  border: 1px solid transparent;
+}
+
+.product_item .bottom_section .remove_from_cart {
+  border: 1px solid #dc2626;
+  color: #dc2626;
+  background-color: transparent;
+}
