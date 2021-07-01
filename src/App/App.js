@@ -15,6 +15,7 @@ const SignUp = lazy(() => import('../container/AuthenticationPage/SignUp/SignUp'
 const Checkout = lazy(() => import('../container/Checkout/Checkout'));
 const SuccessPage = lazy(() => import('../container/SripePages/SuccessPage/SuccessPage'));
 const FailPage = lazy(() => import('../container/SripePages/FailPage/FailPage'));
+const NotFind = lazy(() => import('../container/404_Page/404_Page'));
 
 const routes = (
   <Switch>
@@ -25,6 +26,7 @@ const routes = (
     <Route path='/checkout' component={Checkout} />
     <Route path='/success_payment' component={SuccessPage} />
     <Route path='/fail_payment' component={FailPage} />
+    <Route component={NotFind} />
     <Route path='/:item' component={Product} />
   </Switch>
 );
